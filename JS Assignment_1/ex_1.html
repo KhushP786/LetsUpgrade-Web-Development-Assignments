@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- saved from url=(0106)file:///F:/Home/Downloads/Let-s-Upgrade-Javascript-Essentials-Assignments-main/JS%20Assignment_1/ex_1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Question no 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <h3><u>Question No 1</u></h3>
+        <hr>
+        <p>
+            <b>What will the code below output to the console and why ?</b>
+            <code>
+                </code></p><pre><code>                    console.log(1 + "2" + "2");
+                    console.log(1 + + "2" + "2");
+                    console.log(1 + -"1" + "2");
+                    console.log(+ "1" + "1" + "2");
+                    console.log("A" - "B" + "2");
+                    console.log("A" - "B" + 2);
+                </code></pre><code>
+            </code>
+
+            <b><u>OUTPUT</u></b><br>
+            <pre>                console.log(1 + "2" + "2"); 
+                &gt;&gt;&gt; 122
+                    Here 1 2 2 were considered as a string so it just concats all and prints as 122.
+            
+                console.log(1 + + "2" + "2");
+                &gt;&gt;&gt; 32
+                    Here 1 + +"2" is considered as a arithmetic addition so it gives 3 and this 3 concats with "2" to give 32.
+                    single + means concat, double + means for addition operation.
+                
+                console.log(1 + -"1" + "2");
+                &gt;&gt;&gt; 02
+                    Same above with subtract operation so 1 - 1 gives 0 and this 0 concats with "2" to give 02.
+
+                console.log(+ "1" + "1" + "2");
+                &gt;&gt;&gt; 112
+                    Here all were considerd as string only so it concats everything and gives 112.
+                    The + sign before the first "1" is just dummy or it won't affect the output.
+
+                console.log("A" - "B" + "2");
+                &gt;&gt;&gt; NaN2
+                    Here A and B are strings, with strings we can't do arithmetic operations and it is semantic(meaningless) error so it gives "NaN"
+                    and this "NaN" again concats with the "2" to give NaN2.
+        
+                console.log("A" - "B" + 2)
+                &gt;&gt;&gt; NaN
+                    Here also as above A - B gives "NaN" and with this string we can only concat the values again performing addition is meaningless,
+                    so it again gives "NaN".
+            </pre>
+
+        <p></p>
+        <hr>
+        <script>
+            console.log("        Question no 1      ");
+            console.log(1 + "2" + "2");
+            console.log(1 + + "2" + "2");
+            console.log(1 + -"1" + "2");
+            console.log(+ "1" + "1" + "2");
+            console.log("A" - "B" + "2");
+            console.log("A" - "B" + 2);
+        </script>
+
+    
+</body></html>
